@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gunshot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 60px;
+            background: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            height: 90vh;
+        }
+
+        .left-image {
+            flex: 1;
+            background-image: url("your-image.jpg"); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px;
+        }
+
+        .right-text h1 {
+            font-size: 70px;
+            margin: 0;
+            letter-spacing: 5px;
+        }
+
+        .right-text p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>My List</li>
+            <li>Recently Added</li>
+            <li>Originals</li>
+            <li>Films</li>
+            <li>TV Series</li>
+            <li>Home</li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="left-image"></div>
+
+        <div class="right-text">
+            <h1>GUNSHOT</h1>
+            <p>Poison like a gun</p>
+        </div>
+    </section>
+
+</body>
+</html>
