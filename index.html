@@ -19,13 +19,19 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 40px;
+            gap: 40px; /* space between menu items */
             margin: 0;
+            padding: 0;
         }
 
-        nav ul li {
-            cursor: pointer;
-            font-size: 14px;
+        nav ul li a {
+            color: #850828;       /* <-- link color */
+            text-decoration: none; /* removes underline */
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #FF69B4;       /* <-- hover color */
         }
 
         /* Hero Section */
@@ -51,13 +57,20 @@
 
         .right-text h1 {
             font-size: 70px;
-            margin: 0;
+            margin: 0 0 20px 0; /* spacing below heading */
             letter-spacing: 5px;
+            color: #850828;     /* <-- heading color */
         }
 
-        .right-text p {
-            font-size: 18px;
-            margin-top: 10px;
+        .right-text p:first-of-type {
+            color: #872941;      /* <-- first paragraph color */
+            margin: 0 0 20px 0;
+        }
+
+        .right-text p:last-of-type {
+            color: #FF69B4;      /* <-- second paragraph color */
+            font-size: 20px;
+            margin: 0;
         }
     </style>
 </head>
@@ -66,9 +79,9 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" style="color: #850828; text-decoration: none;">Home</a></li>
-            <li><a href="hitman.html" style="color: #850828; text-decoration: none;">Hitman</a></li>
-            <li><a href="payment.html" style="color: #850828;  text-decoration: none;">Payment</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hitman.html">Hitman</a></li>
+            <li><a href="payment.html">Payment</a></li>
         </ul>
     </nav>
 
@@ -76,11 +89,9 @@
         <div class="left-image"></div>
 
         <div class="right-text">
-            <h1 style="color: #850828">Get your very own hitman</h1>
-            <p style="color: #872941">(dont take this seriously)</p>
-            <p style="margin-top: 30px; font-size: 20px;">Get your very own hitman and bring down the people
-you wanna bring down — all at a surprisingly cheap price.
-</p>
+            <h1>Get your very own hitman</h1>
+            <p>(dont take this seriously)</p>
+            <p>Get your very own hitman and bring down the people you wanna bring down — all at a surprisingly cheap price.</p>
         </div>
     </section>
 
