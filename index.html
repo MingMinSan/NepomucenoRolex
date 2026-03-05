@@ -19,19 +19,37 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 40px; /* space between menu items */
+            gap: 40px;
             margin: 0;
             padding: 0;
         }
 
+        /* Links with oblong hover effect */
         nav ul li a {
-            color: #850828;       /* <-- link color */
-            text-decoration: none; /* removes underline */
+            position: relative;
+            color: #850828;       /* normal link color */
+            text-decoration: none;
             font-size: 16px;
+            padding: 5px 15px;    /* space inside oblong */
+            transition: all 0.3s ease;
         }
 
-        nav ul li a:hover {
-            color:  #cc584e;       /* <-- hover color */
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scaleX(0); /* hidden initially */
+            width: 120%;      /* oblong width */
+            height: 50%;      /* oblong height */
+            background-color: #cc584e; /* oblong color */
+            border-radius: 25px;       /* rounded shape */
+            z-index: -1;               /* behind text */
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            transform: translate(-50%, -50%) scaleX(1); /* expand on hover */
         }
 
         /* Hero Section */
@@ -57,21 +75,22 @@
 
         .right-text h1 {
             font-size: 70px;
-            margin: 0 0 20px 0; /* spacing below heading */
+            margin: 0 0 20px 0;
             letter-spacing: 5px;
-            color: #850828;     /* <-- heading color */
+            color: #850828;
         }
 
         .right-text p:first-of-type {
-            color: #872941;      /* <-- first paragraph color */
+            color: #872941;
             margin: 0 0 20px 0;
         }
 
         .right-text p:last-of-type {
-            color: #FF69B4;      /* <-- second paragraph color */
+            color: #FF69B4;
             font-size: 20px;
             margin: 0;
         }
+
     </style>
 </head>
 
