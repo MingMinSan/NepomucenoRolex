@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+place it also in home, hitman, payment.  only this 3 okeh      <!DOCTYPE html>
 <html>
 <head>
     <title>Get your very own Hitman</title>
@@ -19,37 +19,19 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 40px;
+            gap: 40px; /* space between menu items */
             margin: 0;
             padding: 0;
         }
 
-        /* Links with oblong hover effect */
         nav ul li a {
-            position: relative;
-            color: #850828;       /* normal link color */
-            text-decoration: none;
+            color: #850828;       /* <-- link color */
+            text-decoration: none; /* removes underline */
             font-size: 16px;
-            padding: 5px 15px;    /* space inside oblong */
-            transition: all 0.3s ease;
         }
 
-        nav ul li a::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scaleX(0); /* hidden initially */
-            width: 120%;      /* oblong width */
-            height: 50%;      /* oblong height */
-            background-color: #cc584e; /* oblong color */
-            border-radius: 25px;       /* rounded shape */
-            z-index: -1;               /* behind text */
-            transition: transform 0.3s ease;
-        }
-
-        nav ul li a:hover::after {
-            transform: translate(-50%, -50%) scaleX(1); /* expand on hover */
+        nav ul li a:hover {
+            color:  #cc584e;       /* <-- hover color */
         }
 
         /* Hero Section */
@@ -75,22 +57,119 @@
 
         .right-text h1 {
             font-size: 70px;
-            margin: 0 0 20px 0;
+            margin: 0 0 20px 0; /* spacing below heading */
             letter-spacing: 5px;
-            color: #850828;
+            color: #850828;     /* <-- heading color */
         }
 
         .right-text p:first-of-type {
-            color: #872941;
+            color: #872941;      /* <-- first paragraph color */
             margin: 0 0 20px 0;
         }
 
         .right-text p:last-of-type {
-            color: #FF69B4;
+            color: #1c0509;      /* <-- second paragraph color */
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hitman.html">Hitman</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="left-image"></div>
+
+        <div class="right-text">
+            <h1>Get your very own hitman</h1>
+            <p>(dont take this seriously)</p>
+            <p>Get your very own hitman and bring down the people you wanna bring down — all at a surprisingly cheap price.</p>
+        </div>
+    </section>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Get your very own Hitman</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 60px;
+            background: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px; /* space between menu items */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #850828;       /* <-- link color */
+            text-decoration: none; /* removes underline */
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color:  #cc584e;       /* <-- hover color */
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            height: 90vh;
+        }
+
+        .left-image {
+            flex: 1;
+            background-image: url(""); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px;
+        }
+
+        .right-text h1 {
+            font-size: 70px;
+            margin: 0 0 20px 0; /* spacing below heading */
+            letter-spacing: 5px;
+            color: #850828;     /* <-- heading color */
+        }
+
+        .right-text p:first-of-type {
+            color: #872941;      /* <-- first paragraph color */
+            margin: 0 0 20px 0;
+        }
+
+        .right-text p:last-of-type {
+            color: #FF69B4;      /* <-- second paragraph color */
             font-size: 20px;
             margin: 0;
         }
-
     </style>
 </head>
 
@@ -116,3 +195,4 @@
 
 </body>
 </html>
+                         
