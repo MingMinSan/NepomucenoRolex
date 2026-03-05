@@ -19,37 +19,37 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 40px; 
+            gap: 40px; /* space between menu items */
             margin: 0;
             padding: 0;
         }
 
         nav ul li a {
-            color: #850828;       /* <-- link color */
+            color: #850828;       /* link color */
             text-decoration: none; /* removes underline */
             font-size: 16px;
+            padding: 8px 20px;
+            border-radius: 25px;   /* oblong shape */
+            transition: 0.3s;
         }
 
         nav ul li a:hover {
-            color:  #CC584E;       /* <-- hover color */
+            background-color: #CC584E; /* oblong background on hover */
+            color: white;
         }
 
-
+        /* Hero Section */
         .hero {
-            ont-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-image: url('bg.1.png');
-    background-size: cover;      
-    background-position: center; 
-    height: 100vh;      
-}
+            display: flex;
+            height: 100vh;
+            background-image: url('bg.1.png'); /* your PNG */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .left-image {
             flex: 1;
-            background-image: url(""); 
-            background-size: cover;
-            background-position: center;
         }
 
         .right-text {
@@ -62,21 +62,22 @@
 
         .right-text h1 {
             font-size: 70px;
-            margin: 0 0 20px 0; /* spacing below heading */
+            margin: 0 0 20px 0;
             letter-spacing: 5px;
-            color: #850828;     /* <-- heading color */
+            color: #850828;
         }
 
         .right-text p:first-of-type {
-            color: #872941;      /* <-- first paragraph color */
+            color: #872941;
             margin: 0 0 20px 0;
         }
 
         .right-text p:last-of-type {
-            color: #1C0509;      /* <-- second paragraph color */
+            color: #1C0509;
             font-size: 20px;
-            margin: 20px;
-            text-align: center;
+            margin: 0;
+            line-height: 1.5;
+            text-align: left; /* keep it aligned on the right-text side */
         }
     </style>
 </head>
@@ -103,4 +104,3 @@
 
 </body>
 </html>
-                         
